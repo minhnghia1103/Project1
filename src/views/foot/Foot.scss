@@ -1,0 +1,100 @@
+@import '../scss-setup/scss-setup.scss';
+.foot{
+    background-color: #051922;
+    color: #fff;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: space-around;
+    h1{
+        font-size: 2.4rem;
+        font-weight: 500;
+        padding-bottom: 2rem;
+        margin: 0 0 1.25rem 0;
+    }
+    div{
+        width: 21rem;
+    }
+    .foot-about{
+        p{
+            opacity: 0.7;
+        line-height: 1.8;
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 0.1;
+        }
+    }
+    .foot-touch{
+        p{
+            opacity: 0.7;
+        line-height: 1.8;
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 0.1;
+        }
+    }
+    .foot-page{
+        p{
+            opacity: 0.7;
+        line-height: 1.8;
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 0.1;
+        span{
+            color: #F28123;
+            margin-right: 0.5rem;
+        }
+        }
+        
+    }
+
+    .foot-sub{
+        p{
+            opacity: 0.7;
+        line-height: 1.8;
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 0.1;
+        }
+
+        input{
+            background-color: #012738;
+            padding: 2rem 1rem;
+            border: 0.1px solid #012738;
+            border-radius: 0.5rem;
+        }
+        
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    .foot{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 15rem 7rem;
+        .foot-about,.foot-page,.foot-sub,.foot-touch{
+            padding-bottom: 0;
+        }
+    }
+    
+    
+}
+@media screen and (max-width : 740px) {
+    .foot{
+        display: block;
+        
+        padding: 15rem 7rem;
+        .foot-about,.foot-page,.foot-sub,.foot-touch{
+            display: block;
+            h1{
+                display: block;
+            }
+            p{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    
+    
+}

@@ -1,0 +1,68 @@
+@import '../scss-setup/scss-setup.scss';
+
+.slick-c{
+    width: 100%;
+    position: relative;
+    height: 50rem;
+    .main-c{
+            padding-top: 5rem;
+            display: flex;
+            margin: auto;
+            height: 13rem;
+            border-radius: 40%;
+            margin-bottom: 2rem;
+        
+    }
+    h3{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        margin: 0 0 1.25rem 0;
+        color: #051922;
+        letter-spacing: 0.1px;
+        span{
+            display: block;
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+    }
+    p{
+        font-size: 1.7rem;
+        font-style: italic;
+        width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+        color: #999999;
+        margin-top: 20px;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.1px;
+        text-align: center;
+    }
+    .phu{
+        padding-top: 2rem;
+        height: 2.5rem;
+        opacity: 0.3;
+        display: flex;
+        margin: auto;
+        
+    }
+}
+
+@media screen and (max-width : 860px) {
+    p{
+        padding: 0 4rem;
+    }   
+}
+
+@media screen and (max-width : 700px) {
+    .slick-c ,.main-c,h3,p,.phu {
+    display: none;
+    }
+    .slick-c .main-c{
+        display: none;
+    }
+    .slick-c{
+        height: 0;
+    }
+}

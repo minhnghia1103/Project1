@@ -1,0 +1,165 @@
+@import '../scss-setup/scss-setup.scss';
+.produce{
+    .text-product{
+        display: flex;
+        justify-content: center;
+        .textcolor{
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin: 1.5rem;
+            border: 2px solid #051922;
+            color: #323232;
+            cursor: pointer;
+            padding: 0rem 2rem;
+            border-radius: 2.5rem;
+            letter-spacing: 0.1px;
+            line-height: 1.8;
+            
+        }
+        .textcolor-c{
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin: 1.5rem;
+            border: 2px solid #F28123;
+            cursor: pointer;
+            padding: 0rem 2rem;
+            border-radius: 2.5rem;
+            letter-spacing: 0.1px;
+            line-height: 1.8;
+            background-color: #F28123;
+            color: white;
+        }
+    }
+    .fruits-produce{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:5rem;
+        margin: 3rem 8rem;
+        .img{
+            display: inline-block;
+            position: relative;
+            box-shadow:  0px 0px 10px rgb(232, 227, 227);
+            padding: 1.7rem 3rem 4rem 3rem;
+            img{
+                display: flex;
+                margin: auto;
+                height: 20.7rem;
+            }
+            h2,p,h1,button{
+                text-align: center;
+            }
+            h2{
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                line-height: 2.25rem;
+                margin: 0 0 1.25rem 0;
+                color: #051922;
+                letter-spacing: 0.1px;
+            }
+            p{
+                opacity: 0.8;
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-family: 'Poppins',sans-serif;
+                color: #051922;
+                letter-spacing: 0.1px;
+                line-height: 1.8;
+                margin: 0;
+            }
+            h1{
+                font-family: 'Poppins',sans-serif;
+                font-size: 3rem;
+                font-weight: 700;
+                margin : 0 0 1.5rem 0;
+                color: #051922;
+                letter-spacing: 0.1px;
+                line-height: 1.8;
+            }
+            button{
+                padding: 1rem 1.7rem;
+                background-color: #F28123;
+                color: white;
+                font-size: 1.6rem;
+                letter-spacing: 0.01rem;
+                display: flex;
+                margin: auto;
+                border: 0.1rem solid #F28123;
+                border-radius: 1.8rem;
+                cursor: pointer;
+                &:hover{
+                    background-color: #051922;
+                    color: #F28123;
+                    border: #051922;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1270px) {
+    .produce .fruits-produce{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap:3rem;
+        .img{
+            width: 100%;
+            img{
+                display: flex;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 863px) {
+    .produce .text-product{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .textcolor,.textcolor-c{
+            text-align: center;
+            padding: 0;
+        }
+    }
+}
+@media screen and (max-width : 863px) {
+    .produce .text-product{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        .textcolor,.textcolor-c{
+            display: block;
+            text-align: center;
+            padding: 0;
+        }
+    }
+    .produce .fruits-produce{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap:3rem;
+        .img{
+            width: 100%;
+            img{
+                display: flex;
+                margin: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width : 705px){
+    .produce .text-product{
+        display: block;
+        .textcolor,.textcolor-c{
+            padding: 0;
+            display: block;
+            font-weight: 400;
+            font-size: 1.2rem;
+            margin: 1.5rem;
+            border: 0;
+            cursor: pointer;
+            padding: 0rem ;
+            letter-spacing: 0.1px;
+            line-height: 1
+        }
+    }
+}
